@@ -20,7 +20,7 @@
    },
    "permissions": ["activeTab",
       "notifications",
-      "http://namazvakitleri.diyanet.gov.tr/",
+      "http://namazvakti.diyanet.gov.tr/",
       "http://www.fazilettakvimi.com/",
       "unlimitedStorage"
    ],

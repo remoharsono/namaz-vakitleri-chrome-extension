@@ -145,7 +145,7 @@ function invokeGetRequest(url, callback){
 }
 
 function updateCountries(callback){
-	var url = "http://namazvakitleri.diyanet.gov.tr/wsNamazVakti.svc";
+	var url = "http://namazvakti.diyanet.gov.tr/wsNamazVakti.svc";
     var soapAction = "http://tempuri.org/IwsNamazVakti/Ulkeler";
     var soapXml ="<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\"> \
    <soapenv:Header/> \
@@ -196,7 +196,7 @@ function updateCountries(callback){
 }
 
 function updateProvinces(countryCode, callback){
-    var url = "http://namazvakitleri.diyanet.gov.tr/wsNamazVakti.svc";
+    var url = "http://namazvakti.diyanet.gov.tr/wsNamazVakti.svc";
     var soapAction = "http://tempuri.org/IwsNamazVakti/Sehirler";
     var soapXml ="<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\
    <soapenv:Header/>\
@@ -227,7 +227,7 @@ function updateCities(countryCode, provinceCode, callback){
 	   provinceCode = "0";
     }
 
-    var url = "http://namazvakitleri.diyanet.gov.tr/wsNamazVakti.svc";
+    var url = "http://namazvakti.diyanet.gov.tr/wsNamazVakti.svc";
     var soapAction = "http://tempuri.org/IwsNamazVakti/Ilceler";
     var soapXml ="<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\
    <soapenv:Header/>\
@@ -255,7 +255,7 @@ function updateCities(countryCode, provinceCode, callback){
 }
 
 function updateTimes(cityCode, callback){
-	var url = "http://namazvakitleri.diyanet.gov.tr/wsNamazVakti.svc";
+	var url = "http://namazvakti.diyanet.gov.tr/wsNamazVakti.svc";
     var soapAction = "http://tempuri.org/IwsNamazVakti/AylikNamazVakti";
     var soapXml ="<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\"> \
    <soapenv:Header/>\
