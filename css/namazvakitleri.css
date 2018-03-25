@@ -63,6 +63,7 @@ body {-webkit-user-select:none;font:bold 10px Verdana, Tahoma, Helvetica, Arial,
 #quote .quote {
 	padding: 0px 5px;
 	display: none;
+	font-weight: normal;
 }
 #quote .loader {
 	display: none;

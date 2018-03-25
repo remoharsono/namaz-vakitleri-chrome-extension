@@ -201,7 +201,6 @@ function quote(date_, callback){
 			if (month_!=null) {
 				month = new HashMap(month_);
 				day = month.get(date[0]);
-				console.log(day);
 				if (day!=null) {
 					if (day.quote!=null && day.lang!=null && day.lang==chrome.i18n.getMessage("lang")) {
 						$("#quote .quote").text(day.quote);
@@ -219,7 +218,7 @@ function quote(date_, callback){
 			} else {
 				getQuote(date[0],date[1],date[2],function(quote,isError){
 					if(!isError) {
-						$("#quote .quote").text(quote);
+						$("#quote .quote").html(quote);
 
 						day.quote=quote;
 						day.lang=chrome.i18n.getMessage("lang")
